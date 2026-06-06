@@ -1,34 +1,10 @@
-## ¿Cómo interpretar el concepto de política y sus repercusiones en el Estado Colombiano?
+## ¿Por qué la CPC se fundamenta en la defensa de derechos y la promoción de mecanismos de participación ciudadana?
 
-La política puede interpretarse como la actividad mediante la cual una sociedad organiza el poder, toma decisiones colectivas y busca solucionar problemas de interés común.
+La Constitución Política de Colombia de 1991 se fundamenta en la defensa de derechos porque estableció un catálogo amplio de derechos fundamentales, sociales, económicos y culturales, reconociendo la dignidad humana como principio esencial del Estado.
 
-En el Estado colombiano, la política influye directamente en la formulación de leyes, la administración de los recursos públicos y la protección de los derechos ciudadanos.
+Además, promueve mecanismos de participación ciudadana como el voto, el referendo, la consulta popular, el cabildo abierto y la revocatoria del mandato, permitiendo que los ciudadanos intervengan directamente en las decisiones públicas.
 
-Además, permite la participación de la población a través de mecanismos democráticos como el voto y el control ciudadano.
-
-Por ello, una política orientada al bien común contribuye al fortalecimiento de las instituciones, la convivencia social y el desarrollo del país.
-
----
-
-## ¿Cómo interpretar el concepto de política y sus repercusiones en el Estado Colombiano?
-
-Más allá de los partidos políticos y las elecciones, la política representa la forma en que los ciudadanos, las instituciones y los gobernantes interactúan para alcanzar objetivos colectivos.
-
-En Colombia, sus repercusiones se evidencian en las decisiones que afectan aspectos económicos, sociales y culturales de la población.
-
-Una participación política activa favorece la democracia y la transparencia, mientras que la falta de compromiso ciudadano puede debilitar la confianza en las instituciones.
-
-Por esta razón, comprender la política es fundamental para ejercer una ciudadanía responsable.
-
----
-
-## ¿Cuáles fueron las continuidades y rupturas de los cambios constitucionales de Colombia?
-
-La historia constitucional de Colombia ha estado marcada por elementos de continuidad, como la existencia de un Estado organizado y la búsqueda de un marco jurídico que regule la convivencia social.
-
-Sin embargo, también se han producido importantes rupturas, especialmente con la Constitución de 1991, que transformó la relación entre el Estado y los ciudadanos al fortalecer la participación democrática, ampliar el catálogo de derechos fundamentales y reconocer la diversidad étnica y cultural del país.
-
-Estos cambios reflejan la evolución de la sociedad colombiana y sus necesidades a lo largo del tiempo.
+De esta manera, la CPC busca garantizar que el poder no se concentre únicamente en las autoridades, sino que la ciudadanía tenga un rol activo en la construcción de la democracia y en la protección de sus propios derechos.
 
 ---
 
@@ -42,10 +18,32 @@ Todos ellos son indispensables para el desarrollo integral de las personas y la 
 
 ---
 
-## ¿Qué son los principios básicos de la democracia y cómo identificar los derechos fundamentales, los derechos sociales, económicos y culturales?
+## ¿Cuáles fueron las continuidades y rupturas de los cambios constitucionales de Colombia?
 
-La democracia se fundamenta en la capacidad de los ciudadanos para participar en las decisiones públicas y elegir libremente a sus representantes.
+La historia constitucional de Colombia ha estado marcada por elementos de continuidad, como la existencia de un Estado organizado y la búsqueda de un marco jurídico que regule la convivencia social.
 
-Dentro de este sistema, los derechos fundamentales garantizan la protección de la dignidad humana y las libertades individuales, mientras que los derechos sociales, económicos y culturales promueven la igualdad de oportunidades y el bienestar colectivo.
+Sin embargo, también se han producido importantes rupturas, especialmente con la Constitución de 1991, que transformó la relación entre el Estado y los ciudadanos al fortalecer la participación democrática, ampliar el catálogo de derechos fundamentales y reconocer la diversidad étnica y cultural del país.
 
-La Constitución Política de 1991 establece mecanismos para proteger estos derechos y asegurar que todas las personas puedan ejercerlos de manera efectiva dentro del Estado colombiano.
+Estos cambios reflejan la evolución de la sociedad colombiana y sus necesidades a lo largo del tiempo.
+
+---
+
+## ¿De qué manera ha evolucionado la interpretación del Estado y cómo se entiende un Estado constitucional?
+
+La interpretación del Estado ha evolucionado desde una concepción absolutista, donde el poder se concentraba en una sola persona, hasta el modelo de Estado constitucional, donde el poder está limitado por una constitución que garantiza derechos y establece la separación de poderes.
+
+En un Estado constitucional, la constitución es la norma suprema y todas las autoridades están sujetas a ella. Esto implica que las leyes y actuaciones del Estado deben respetar los derechos fundamentales y los principios democráticos.
+
+Colombia, como Estado Social de Derecho, adopta esta visión al someter el ejercicio del poder a la Constitución de 1991, garantizando la protección de los derechos y la participación ciudadana como ejes centrales de su organización política.
+
+---
+
+## ¿Cómo interpretar el concepto de política y sus repercusiones en el Estado Colombiano?
+
+La política puede interpretarse como la actividad mediante la cual una sociedad organiza el poder, toma decisiones colectivas y busca solucionar problemas de interés común.
+
+En el Estado colombiano, la política influye directamente en la formulación de leyes, la administración de los recursos públicos y la protección de los derechos ciudadanos.
+
+Además, permite la participación de la población a través de mecanismos democráticos como el voto y el control ciudadano.
+
+Por ello, una política orientada al bien común contribuye al fortalecimiento de las instituciones, la convivencia social y el desarrollo del país.
