@@ -118,4 +118,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Expose for other scripts
   window.observeReveals = observeReveals;
+
+  // ─── Lightbox ──────────────────────────────────────
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox-overlay';
+  lightbox.innerHTML = '<button class="lightbox-close" aria-label="Cerrar">&times;</button><img src="" alt="">';
+  document.body.appendChild(lightbox);
+
+  const lightboxImg = lightbox.querySelector('img');
+  const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+  document.addEventListener('click', (e) => {
+    const img = e.target.closest('.unit-image img, .article-hero-img img');
+    if (img) {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || '';
+      lightbox.classList.add('open');
+    }
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target === lightboxClose) {
+      lightbox.classList.remove('open');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') lightbox.classList.remove('open');
+  });
+
+  // ─── Anchor link copy ─────────────────────────────
+  document.addEventListener('click', (e) => {
+    const anchor = e.target.closest('.anchor-link');
+    if (anchor) {
+      e.preventDefault();
+      const url = window.location.href.split('#')[0] + anchor.getAttribute('href');
+      navigator.clipboard.writeText(url).catch(() => {});
+    }
+  });
 });

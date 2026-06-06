@@ -132,6 +132,26 @@ document.addEventListener('DOMContentLoaded', () => {
     return toc;
   }
 
+  function setupTOCHighlight() {
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const headings = document.querySelectorAll('.question-card h2');
+    if (!tocLinks.length || !headings.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      let activeId = null;
+      entries.forEach(entry => {
+        if (entry.isIntersecting) activeId = entry.target.id;
+      });
+      if (activeId) {
+        tocLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
+        });
+      }
+    }, { rootMargin: '-80px 0px -60% 0px' });
+
+    headings.forEach(h => observer.observe(h));
+  }
+
   // ─── Load & render ──────────────────────────────
   async function loadAndRender() {
     mainContent.innerHTML = '<div class="page-loader"><div class="loader-spinner"></div></div>';
@@ -163,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>`;
 
       if (window.observeReveals) window.observeReveals();
+      setupTOCHighlight();
     } catch (err) {
       mainContent.innerHTML = `<div class="article-page"><p style="color:var(--text-faint);text-align:center;padding:4rem 0;">Error: ${err.message}</p></div>`;
     }

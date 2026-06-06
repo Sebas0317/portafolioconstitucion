@@ -84,7 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
           .replace(/[^a-z0-9áéíóúüñ\s-]/g, '')
           .replace(/\s+/g, '-')
           .replace(/-+/g, '-');
-        html += `<${tag} id="${id}">${inlineMarkdown(content)}</${tag}>\n`;
+        const anchor = `<a class="anchor-link" href="#${id}" aria-label="Enlace directo a esta sección" title="Copiar enlace">#</a>`;
+        html += `<${tag} id="${id}">${anchor}${inlineMarkdown(content)}</${tag}>\n`;
         continue;
       }
 
@@ -150,6 +151,26 @@ document.addEventListener('DOMContentLoaded', () => {
     return toc;
   }
 
+  function setupTOCHighlight() {
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const headings = document.querySelectorAll('.article-body h2, .article-body h3');
+    if (!tocLinks.length || !headings.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      let activeId = null;
+      entries.forEach(entry => {
+        if (entry.isIntersecting) activeId = entry.target.id;
+      });
+      if (activeId) {
+        tocLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
+        });
+      }
+    }, { rootMargin: '-80px 0px -60% 0px' });
+
+    headings.forEach(h => observer.observe(h));
+  }
+
   async function loadAndRender() {
     mainContent.innerHTML = '<div class="page-loader"><div class="loader-spinner"></div></div>';
     try {
@@ -207,6 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.title = `Unidad ${unit.num}. ${unit.title} · Constitución Política`;
 
       if (window.observeReveals) window.observeReveals();
+      setupTOCHighlight();
     } catch (err) {
       mainContent.innerHTML = `<div class="article-page"><p style="color:var(--text-faint);text-align:center;padding:4rem 0;">Error: ${err.message}</p></div>`;
     }
