@@ -148,12 +148,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ─── Anchor link copy ─────────────────────────────
+  const tooltip = document.createElement('div');
+  tooltip.className = 'anchor-tooltip';
+  tooltip.textContent = '¡Enlace copiado!';
+  document.body.appendChild(tooltip);
+
+  let tooltipTimer = null;
+
   document.addEventListener('click', (e) => {
     const anchor = e.target.closest('.anchor-link');
     if (anchor) {
       e.preventDefault();
       const url = window.location.href.split('#')[0] + anchor.getAttribute('href');
       navigator.clipboard.writeText(url).catch(() => {});
+      clearTimeout(tooltipTimer);
+      tooltip.classList.add('visible');
+      tooltipTimer = setTimeout(() => tooltip.classList.remove('visible'), 2000);
     }
   });
 });

@@ -1318,8 +1318,70 @@ blockquote p {
 }
 
 /* ============================================
-   HEADING SCROLL MARGIN
+   TEXT WRAP
    ============================================ */
+.article-header h1,
+.article-body h2,
+.article-body h3 {
+  text-wrap: balance;
+}
+
+.article-body p {
+  text-wrap: pretty;
+}
+
+/* ============================================
+   CONTENT VISIBILITY
+   ============================================ */
+.featured-section,
+.sabias-section,
+.units-grid,
+.toc,
+.unit-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 400px;
+}
+
+.article-body {
+  content-visibility: auto;
+  contain-intrinsic-size: 2000px;
+}
+
+/* ============================================
+   IMAGE FADE-IN
+   ============================================ */
+.unit-image img {
+  transition: transform 0.3s ease;
+}
+
+.unit-card:hover .unit-image img {
+  transform: scale(1.03);
+}
+
+/* ============================================
+   ANCHOR TOOLTIP
+   ============================================ */
+.anchor-tooltip {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-strong);
+  color: var(--bg);
+  font-size: 0.8125rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  pointer-events: none;
+}
+
+.anchor-tooltip.visible {
+  opacity: 1;
+  visibility: visible;
+}
 .article-body h2,
 .article-body h3 {
   scroll-margin-top: 5rem;
