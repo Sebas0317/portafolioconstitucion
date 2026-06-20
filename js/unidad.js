@@ -189,11 +189,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const readTime = readingTime(unit.body);
 
       const unitImages = {
-        1: 'politica.jpg',
-        2: 'estado.jpg',
-        3: 'constitucionalismo.jpeg',
-        4: 'democracia.jpg',
-        5: 'participacion.jpg'
+        1: 'assets/politica.jpg',
+        2: 'assets/estado.jpg',
+        3: 'assets/constitucionalismo.jpeg',
+        4: 'assets/democracia.jpg',
+        5: 'assets/participacion.jpg'
       };
 
       const imgSrc = unitImages[unitNum];

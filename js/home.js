@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hero = `
     <section class="hero-section reveal">
       <div class="hero-logo">
-        <img src="ut.png" alt="Universidad del Tolima">
+        <img src="assets/ut.png" alt="Universidad del Tolima">
       </div>
       <h1 class="hero-title">Portafolio Académico de Constitución Política</h1>
       <p class="hero-subtitle">Juan Sebastian Sandoval · Ingeniería de Sistemas · Semestre IV</p>
